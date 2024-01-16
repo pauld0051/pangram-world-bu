@@ -113,6 +113,15 @@
     white-space: nowrap; /* Keep the 'Copied!' text on a single line */
 }
 
+.symbol-btn-img {
+    background-color: #ffffff; /* White background for image buttons */
+}
+
+.symbol-btn-img:hover {
+    background-color: #ffffEE; /* Slightly darker shade on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 .symbol-btn, .symbol-btn-large, .symbol-btn-ex, .symbol-btn-ex2 {
