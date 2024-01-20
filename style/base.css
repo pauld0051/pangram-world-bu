@@ -29,3 +29,42 @@ body, main {
     width: 50%;
     height: auto;
 }
+
+/* Submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 10%;
+  left: 100;
+  margin-top: -1px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.sub-item {
+  left: 8px;
+}
+
+/* Adjust the width of the logo container */
+#logo-container {
+    max-width: fit-content; /* This will make the div only as wide as its content */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Adjust navbar-brand widths */
+#logo-navbar-brand {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 0; /* Adjust padding as necessary */
+    /* You might not need the width or max-width depending on your design */
+    width: auto; /* Adjust this as necessary */
+    max-width: 100%; /* Ensuring it doesn't overflow its container */
+}
+
+

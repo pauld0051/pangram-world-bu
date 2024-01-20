@@ -122,6 +122,31 @@
     opacity: 1; /* Full opacity on hover */
 }
 
+#mathContainer {
+    display: inline-block; /* Makes the div only as wide as its content */
+    white-space: nowrap; /* Prevents wrapping and ensures the div is only as wide as the equation */
+    text-align: center; /* Optional: centers the content */
+    background: transparent; /* Sets the background color */
+    padding: 0 1px;
+    margin: 0;
+    border: none;
+    font-size: 18px; /* Adjust as necessary for the size of the text in the PNG */
+}
+
+#resultImage {
+    display: block; /* or 'inline-block' if you prefer */
+    border: none; /* Removes any borders */
+    margin: auto; /* Remove margins */
+    padding: 0; /* Remove paddings */
+}
+
+#downloadLink {
+    display: block; /* Needed to apply text-align: center */
+    text-align: center; /* Center the download link text */
+    margin-top: 10px; /* Space above the download link */
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 .symbol-btn, .symbol-btn-large, .symbol-btn-ex, .symbol-btn-ex2 {
@@ -135,3 +160,5 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax for your content */
     }
 }
+
+
