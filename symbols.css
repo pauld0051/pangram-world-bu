@@ -1,0 +1,164 @@
+/* Style for the symbol buttons to match the site's theme */
+.symbol-btn {
+    background-color: #17a2b8; /* Teal background */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    color: #ffffff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center symbol vertically */
+    justify-content: center; /* Center symbol horizontally */
+    min-width: 60px; /* Fixed width */
+    height: auto; /* Fixed height */
+    margin: 0.5rem; /* Spacing around buttons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    transition: transform 0.1s ease-in-out, background-color 0.3s; /* Smooth transitions */
+    position: relative; /* Needed to position the copied-message span absolutely */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    font-size: calc(11.2px + (14.4 - 11.2) * ((100vw - 300px) / (700 - 300))); /* Responsive font size */
+    word-wrap: break-word; /* Ensure long words do not overflow */
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+.symbol-btn-small {
+    font-size: 1em; /* Adjust the size as needed */
+}
+
+.symbol-btn-micro {
+    font-size: 0.8em;
+}
+
+.symbol-btn-nano {
+    font-size: 0.65em;
+}
+
+.symbol-container label {
+    display: block; /* Ensure the label takes up the full width below the button */
+    margin-top: 5px; /* Space between the button and label text */
+    text-align: center; /* Center align the label text */
+}
+
+.symbol-btn:hover {
+    background-color: #159aab; /* Slightly darker shade on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+.symbol-btn:active {
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+}
+
+.symbol-container {
+    position: relative; /* This will contain the absolute overlay */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; /* Provide some spacing around the symbol container */
+}
+
+.symbol-btn-large {
+    padding: 20px; /* Larger padding to increase the size of the button */
+    min-width: 150px; /* Minimum width to accommodate larger content */
+    display: block; /* To use the full width available */
+    margin: 10px auto; /* Center the buttons with automatic margins */
+    text-align: center; /* Center the text inside the button */
+    font-size: 24px; /* Adjust font size to fit larger content */
+    line-height: 1.2; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Allows the text to wrap into multiple lines if necessary */
+}
+
+.symbol-btn-ex {
+    padding: 20px; /* Larger padding to increase the size of the button */
+    min-width: 150px; /* Minimum width to accommodate larger content */
+    display: block; /* To use the full width available */
+    margin: 10px auto; /* Center the buttons with automatic margins */
+    text-align: center; /* Center the text inside the button */
+    font-size: 18px; /* Adjust font size to fit larger content */
+    line-height: 1.2; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Allows the text to wrap into multiple lines if necessary */
+}
+
+.symbol-btn-ex2 {
+    padding: 20px; /* Larger padding to increase the size of the button */
+    min-width: 150px; /* Minimum width to accommodate larger content */
+    display: block; /* To use the full width available */
+    margin: 10px auto; /* Center the buttons with automatic margins */
+    text-align: center; /* Center the text inside the button */
+    font-size: 14px; /* Adjust font size to fit larger content */
+    line-height: 1.2; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Allows the text to wrap into multiple lines if necessary */
+}
+
+/* Adjustments for the symbols grid container */
+.symbols-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center buttons in the grid */
+}
+
+.copied-overlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: #17a2b8;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 10px;
+    z-index: 1;
+    white-space: nowrap; /* Keep the 'Copied!' text on a single line */
+}
+
+.symbol-btn-img {
+    background-color: #ffffff; /* White background for image buttons */
+}
+
+.symbol-btn-img:hover {
+    background-color: #ffffEE; /* Slightly darker shade on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+#mathContainer {
+    display: inline-block; /* Makes the div only as wide as its content */
+    white-space: nowrap; /* Prevents wrapping and ensures the div is only as wide as the equation */
+    text-align: center; /* Optional: centers the content */
+    background: transparent; /* Sets the background color */
+    padding: 0 1px;
+    margin: 0;
+    border: none;
+    font-size: 18px; /* Adjust as necessary for the size of the text in the PNG */
+}
+
+#resultImage {
+    display: block; /* or 'inline-block' if you prefer */
+    border: none; /* Removes any borders */
+    margin: auto; /* Remove margins */
+    padding: 0; /* Remove paddings */
+}
+
+#downloadLink {
+    display: block; /* Needed to apply text-align: center */
+    text-align: center; /* Center the download link text */
+    margin-top: 10px; /* Space above the download link */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.symbol-btn, .symbol-btn-large, .symbol-btn-ex, .symbol-btn-ex2 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        width: auto; /* Allow width to adjust to content */
+    }
+
+    /* Adjustments for the symbols grid container */
+    .symbols-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax for your content */
+    }
+}
+
+

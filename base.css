@@ -1,0 +1,70 @@
+/* Buffer between header and main */
+main {
+    margin-top: 60px; /* Adjust to match header height */
+}
+
+.round {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Changed from absolute to fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 8; /* Ensure it's above other elements */
+}
+
+/* Add this to ensure that the content is not hidden behind the footer */
+body, main {
+    margin-bottom: 3rem; /* Adjust this value to the height of your footer */
+}
+
+.custom-logo {
+    padding: 0; /* Adjust the padding as needed */
+    width: 50%;
+    height: auto;
+}
+
+/* Submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 10%;
+  left: 100;
+  margin-top: -1px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.sub-item {
+  left: 8px;
+}
+
+/* Adjust the width of the logo container */
+#logo-container {
+    max-width: fit-content; /* This will make the div only as wide as its content */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Adjust navbar-brand widths */
+#logo-navbar-brand {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 0; /* Adjust padding as necessary */
+    /* You might not need the width or max-width depending on your design */
+    width: auto; /* Adjust this as necessary */
+    max-width: 100%; /* Ensuring it doesn't overflow its container */
+}
+
+

@@ -1,0 +1,259 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 2rem;
+}
+
+/* Apply a general padding and possibly a background image or color to the body */
+body {
+    padding: 2rem;
+    background: #f0f2f5; /* Light grey background */
+    /* Add a background image if you like with
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    */
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 2rem auto; /* Adjust the top margin to push down */
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style the form input */
+input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px; /* Rounded corners for the input box */
+    font-size: 1.25rem; /* Larger font size */
+}
+
+/* Style the button */
+button {
+    padding: 1rem 2rem;
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.25rem; /* Larger font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    transition: transform 0.1s ease-in-out; /* Smooth transition for click */
+    margin: 0.5rem 0; /* Add spacing around buttons */
+}
+
+/* Specific style for the transform button */
+.transform-btn {
+    background-color: #28a745; /* Green background */
+}
+
+/* Specific style for the copy buttons */
+.copy-btn {
+    background-color: #17a2b8; /* Teal background */
+}
+
+/* Button interaction */
+button:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+}
+
+
+
+/* Style the result display */
+#result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Style the form */
+#alternatingTextForm, #romanToArabicForm {
+    margin-bottom: 1rem; /* Spacing below the form */
+}
+
+/* Consolidated input style */
+input[type="text"], input[type="number"], #textInput, #romanInput {
+    width: 100%; /* Full width */
+    padding: 1rem; /* Consistent padding */
+    margin-bottom: 1rem; /* Spacing below the input */
+    border: 2px solid #007bff; /* Consistent border */
+    border-radius: 8px; /* Consistent rounded corners */
+    font-size: 1.25rem; /* Larger font size */
+    font-family: 'Roboto', sans-serif; /* Ensuring the font family is consistent */
+}
+
+
+
+/* Style the output textarea */
+textarea {
+    width: 100%; /* Full width */
+    padding: 1rem; /* Match input padding */
+    border: 2px solid #007bff; /* Match input border */
+    border-radius: 8px; /* Match input border-radius */
+    font-size: 1.25rem; /* Match input font size */
+    font-family: 'Roboto', sans-serif; /* Ensuring the font family is consistent */
+    resize: none; /* Disable resizing */
+}
+
+/* Style for button when text is copied */
+.copied {
+    background-color: #28a745 !important; /* Change to a success color, green for example */
+    font-weight: bold; /* Optional: make the 'Copied!' text bold */
+}
+
+.book-coming-soon-container {
+    text-align: center; /* Center the logo */
+    margin: 2px 0; /* Add some space above and below the logo */
+}
+
+.coming-soon-logo {
+    max-width: 40%; /* Ensure the image is responsive and fits its container */
+    height: auto; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to scale up the logo slightly and increase the shadow */
+.book-coming-soon-container:hover .coming-soon-logo {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Optional: Adjust the size of the circle if it's not proportional to the text */
+.fas.fa-circle.fa-3x {
+    font-size: 2em !important; /* Adjust as needed */
+}
+
+/* Responsive design adjustments for main content and form elements */
+@media (max-width: 768px) {
+    /* Reduce padding inside the main content area */
+    main {
+        padding: 1rem;
+    }
+
+    /* Make sure the form input takes full width minus padding */
+    input[type="text"], #alternatingTextOutput, #alternatingTextOutput1 {
+        width: calc(100% - 2rem); /* Adjust the padding here if necessary */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust button sizes on smaller screens */
+    button {
+        padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
+        font-size: 1rem; /* Reduce font size for smaller screens */
+        margin: 0.5rem 0; /* Adjust margin for smaller screens */
+    }
+    .d-grid {
+        display: flex;
+        justify-content: end;
+    }
+    /* Add any additional styles for smaller screens here */
+    /* ... */
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #4267B2;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.facebook-icon {
+    color: #4267B2; /* Facebook blue */
+  }
+
+.container-404 {
+    text-align: center;
+    padding: 25px;
+}
+
+.container-404 h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.container-404 p {
+    font-size: 24px;
+    color: #666;
+}
+
+.img-half-viewport {
+  width: 25vw;
+  height: auto;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll to Top Button */
+#scrollToTopButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  right: 20px; /* Place the button 20px from the right */
+  z-index: 99; /* Make sure it sits on top of everything else */
+  border: none; /* No border */
+  outline: none; /* Remove outline */
+  background-color: #333; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopButton:hover {
+  background-color: #555; /* Add a darker background on hover */
+}
+
+.info-text {
+    font-size: 1em;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    color: #333;
+}
+

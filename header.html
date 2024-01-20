@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> <!-- base.css for custom logo -->
+    <div class="container-fluid" id="logo-container">
+        <a class="navbar-brand" id="logo-navbar-brand" href="index.html"> <!-- base.css for custom logo -->
             <img src="images/pangram-world-title-trsp-long.png" alt="Pangram-World Logo"
                 class="d-inline-block align-text-top custom-logo">
         </a>
@@ -12,10 +12,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav navbar-custom-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" role="button">
-                        <i class="fas fa-home"></i> Home
+                        <i class="fas fa-home d-md-none d-lg-none d-xl-inline"></i> Home
                     </a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -53,7 +53,6 @@
                         <li><a class="dropdown-item" href="symbols_greek_lc.html">α Lowercase Greek</a></li>
                         <li><a class="dropdown-item" href="symbols_greek_uc.html">Ω Uppercase Greek</a></li>
                         <li><a class="dropdown-item" href="symbols_chemistry.html"><i class="fas fa-atom"></i> Chemistry</a></li>
-                        <li><a class="dropdown-item" href="symbols_constants.html"><i class="fas fa-radiation-alt"></i> Physics Constants</a></li>
                         <li><a class="dropdown-item" href="symbols_powers.html"><i class="fas fa-superscript"></i> Exponential and Powers</a></li>
                         <li><a class="dropdown-item" href="symbols_runic.html">ᚡ Runic</a></li>
                         <li><a class="dropdown-item" href="symbols_gender.html"><i class="fas fa-venus-mars"></i> Gender & Sex</a></li>
@@ -64,11 +63,32 @@
                         Physics
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="latex.html"><i class="fas fa-university"></i> LaTeX Generator</a></li>
+                        <li><a class="dropdown-item" href="symbols_constants.html"><i class="fas fa-radiation-alt"></i> Physics Constants</a>
+                        </li>
                         <li><a class="dropdown-item" href="physics_mathematical_equations.html"><i class="fas fa-infinity"></i> Mathematical
                                 Equations</a></li>
-                        <li><a class="dropdown-item" href="physics_A1_kinematics.html"><strong>A1</strong> Kinematic Equations</a></li>
-                        <li><a class="dropdown-item" href="physics_A2_forces_and_momentum.html"><strong>A2</strong> Forces and Momentum</a></li>
-                    </ul>
+                                <div class="dropdown-divider"></div>
+                                <li class="nav-item dropdown dropdown-item-text"> <a href="#" id="menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static">A. Space, time and motion</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="physics_A1_kinematics.html"><strong>A1</strong> Kinematic Equations</a></li>
+                                    <li><a class="dropdown-item" href="physics_A2_forces_and_momentum.html"><strong>A2</strong> Forces and Momentum</a></li>
+                                    <li><a class="dropdown-item" href="physics_A3_work_energy_power.html"><strong>A3</strong> Work, Energy and Power</a></li>
+                                    <li><a class="dropdown-item" href="physics_A4_rigid_body_mechanics.html"><strong>A4</strong> Rigid Body Mechanics</a></li>
+                                    <li><a class="dropdown-item" href="physics_A5_special_relativity.html"><strong>A5</strong> Special Relativity</a></li>
+                                </li>
+                                </ul> <!-- End of Physics A -->
+                                <div class="dropdown-divider"></div>
+                                <li class="nav-item dropdown dropdown-item-text"> <a href="#" id="menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static">B. The particulate nature of matter</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="physics_B1_thermal_energy.html"><strong>B1</strong> Thermal Energy Transfers</a></li>
+                                        <li><a class="dropdown-item" href="physics_B2_greenhouse_effect.html"><strong>B2</strong> Greenhouse Effect</a></li>
+                                        <li><a class="dropdown-item" href="#"><strong>B3</strong> Coming Soon</a></li>
+                                        <li><a class="dropdown-item" href="#"><strong>B4</strong> Coming Soon</a></li>
+                                        <li><a class="dropdown-item" href="#"><strong>B5</strong> Coming Soon</a></li>
+                                </li>
+                                </ul> <!-- End of Physics B -->
+                    </ul> <!-- End of Physics Dropdown -->
                 </li>
             </ul>
         </div>
