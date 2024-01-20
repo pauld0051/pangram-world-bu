@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="LaTeX Generator | Pangram World" />
+    <meta property="og:description"
+        content="Add your LaTeX equation and render it in a high definition .png format. Free to use for everyone!" />
+    <meta property="og:image" content="https://www.pangram-world.com/images/pangram-world-title.png" />
+    <meta property="og:url" content="https://www.pangram-world.com/latex.html" />
+    <title>LaTeX Generator | Pangram World</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/cards.css">
+    <link rel="stylesheet" href="style/symbols.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ... favicon ... -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/18fe617275.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="scripts/html2canvas.min.js"></script>
+
+
+    <!-- Add any additional meta tags and scripts here -->
+</head>
+<body>
+    <!-- Main content area where your page content will go -->
+    <header id="globalHeader"></header>
+    <main>
+        <h2>Copy Kinematic Equations</h2>
+        <p class="info-text">Enter your LaTeX equation below and click 'Render PNG' to generate an image. You can then easily
+            copy or download the .png file. This service is provided free of charge.</p>
+        <small><em>Please note: Due to rendering differences, the generated image may not display correctly in Firefox. For the
+                best experience, we recommend using Chrome or Edge browsers.</em></small>
+        <br>
+        <section>
+            <h3>Make your own LaTeX</h3>
+            <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+
+            <!-- Use a row to contain the selects and button -->
+            <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
+                <!-- Bootstrap Select for Background Selection -->
+                <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
+                    <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                        <option value="transparent" selected>Transparent</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+
+                <!-- Bootstrap Select for Size Selection -->
+                <div class="col-sm">
+                    <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                        <option value="small">Small</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="large">Large</option>
+                        <option value="veryLarge">Very Large</option>
+                        <option value="huge">Huge</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
+                        <button class="btn btn-primary" id="renderButton">Render PNG</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mathContainer"></div>
+            <!-- Container where the copy button will be placed -->
+            <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+            <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+            <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
+        </section>
+
+        <!-- Scroll to Top button (hidden by default with inline style.css) -->
+        <button onclick="scrollToTop()" id="scrollToTopButton"
+            style="display: none; position: fixed; bottom: 20px; right: 20px;"><i class="fas fa-arrow-up"></i></button>
+
+    </main>
+
+    <footer id="globalFooter"></footer>
+    <script src="scripts/symbols.js"></script>
+    <script src="scripts/symbolsLatex.js"></script>
+</body>
+</html>

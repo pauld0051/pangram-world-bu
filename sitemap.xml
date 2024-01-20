@@ -2,7 +2,7 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.pangram-world.com/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2024-18-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -109,5 +109,33 @@
 <url>
   <loc>https://www.pangram-world.com/wide_text.html</loc>
   <lastmod>2024-01-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_mathematical_equations.html</loc>
+  <lastmod>2024-01-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_A1_kinematics.html</loc>
+  <lastmod>2024-20-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_A2_forces_and_momentum.html</loc>
+  <lastmod>2024-20-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_A3_work_energy_power.html</loc>
+  <lastmod>2024-20-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_A4_rigid_body_mechanics.html.html</loc>
+  <lastmod>2024-20-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/physics_A5_special_relativity.html.html</loc>
+  <lastmod>2024-20-01</lastmod>
+</url>
+<url>
+  <loc>https://www.pangram-world.com/latex.html</loc>
+  <lastmod>2024-18-01</lastmod>
 </url>
 </urlset>
