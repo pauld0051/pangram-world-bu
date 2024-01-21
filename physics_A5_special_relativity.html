@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -54,231 +54,271 @@
             <p><em><small>Note: Some limitations exist in the basic form, as subscripts are not always available.</small></em></p>
 
         <!-- LaTeX Equation Buttons -->
-        <section>
-            <h3>A.5 Galilean and Special Relativity Equations - LaTeX</h3>
-            <!-- Lorentz Transformation for Position -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="x' = x - vt">
-                    x' = x - vt
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>x' = x - vt</code></label>
-            </div>
-
-            <!-- Lorentz Transformation for Time -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="t' = t">
-                    t' = t
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>t' = t</code></label>
-            </div>
-
-            <!-- Velocity Transformation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="u' = u - v">
-                    u' = u - v
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>u' = u - v</code></label>
-            </div>
-
-            <!-- Lorentz Factor -->
-            <div class="symbol-container">
-                <button class="symbol-btn"
-                    data-symbol="x' = \gamma (x - vt) \text{ where } \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}">
-                    \( x' = \gamma (x - vt) \text{ where } \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>x' = \gamma (x - vt) where \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}</code></label>
-            </div>
-
-            <!-- Lorentz Transformation for Time -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="t' = \gamma \left( t - \frac{v x}{c^2} \right)">
-                    \( t' = \gamma \left( t - \frac{v x}{c^2} \right) \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>t' = \gamma ( t - \frac{v x}{c^2} )</code></label>
-            </div>
-            
-            <!-- Velocity Transformation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="u' = \frac{u - v}{1 - \frac{u v}{c^2}}">
-                    \( u' = \frac{u - v}{1 - \frac{u v}{c^2}} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>u' = \frac{u - v}{1 - \frac{u v}{c^2}}</code></label>
-            </div>
-            
-            <!-- Spacetime Interval -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="(\Delta s)^2 = (c \Delta t)^2 - \Delta x^2">
-                    \( (\Delta s)^2 = (c \Delta t)^2 - \Delta x^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>(\Delta s)^2 = (c \Delta t)^2 - \Delta x^2</code></label>
-            </div>
-
-            <!-- Time Dilation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta t = \gamma \Delta t_0">
-                    \( \Delta t = \gamma \Delta t_0 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta t = \gamma \Delta t_0</code></label>
-            </div>
-            
-            <!-- Length Contraction -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="L = \frac{L_0}{\gamma}">
-                    \( L = \frac{L_0}{\gamma} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>L = \frac{L_0}{\gamma}</code></label>
-            </div>
-            
-            <!-- Relativistic Doppler Effect -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\tan(\theta) = \frac{v}{c}">
-                    \( \tan(\theta) = \frac{v}{c} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\tan(\theta) = \frac{v}{c}</code></label>
-            </div>
-
-        </section>
-        
-        <section>
-        <h3>A.5 Galilean and Special Relativity - Basic</h3>
+<section>
+    <h3>A.5 Galilean and Special Relativity Equations - LaTeX</h3>
+    <div class="equation-grid">
         <!-- Lorentz Transformation for Position -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="x' = x - vt">
-                x' = x - vt
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Lorentz Transformation for Position</label>
-        </div>
-        
-        <!-- Lorentz Transformation for Time -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="t' = t">
-                t' = t
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Lorentz Transformation for Time</label>
-        </div>
-        
-        <!-- Velocity Transformation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="u' = u - v">
-                u' = u - v
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Velocity Transformation</label>
-        </div>
-        
-        <!-- Lorentz Factor -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="x' = γ(x - vt) where γ = 1/√(1 - v²/c²)">
-                x' = γ(x - vt) where γ = 1/√(1 - v²/c²)
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Lorentz Factor</label>
-        </div>
-        
-        <!-- Lorentz Transformation for Time with Velocity -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="t' = γ(t - vx/c²)">
-                t' = γ(t - vx/c²)
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Lorentz Transformation for Time with Velocity</label>
-        </div>
-        
-        <!-- Velocity Transformation with Relativistic Effect -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="u' = (u - v)/(1 - uv/c²)">
-                u' = (u - v)/(1 - uv/c²)
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Velocity Transformation with Relativistic Effect</label>
-        </div>
-        
-        <!-- Spacetime Interval -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="(Δs)² = (cΔt)² - Δx²">
-                (Δs)² = (cΔt)² - Δx²
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Spacetime Interval</label>
-        </div>
-        
-        <!-- Time Dilation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="Δt = γΔt₀">
-                Δt = γΔt₀
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Time Dilation</label>
-        </div>
-        
-        <!-- Length Contraction -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="L = L₀/γ">
-                L = L₀/γ
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Length Contraction</label>
-        </div>
-        
-        <!-- Relativistic Doppler Effect -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="tanθ = v/c">
-                tanθ = v/c
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Relativistic Doppler Effect</label>
-        </div>
-        </section>
-        
-        <section>
-            <h3>Make your own LaTeX</h3>
-            <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-        
-            <!-- Use a row to contain the selects and button -->
-            <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
-                <!-- Bootstrap Select for Background Selection -->
-                <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
-                    <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
-                        <option value="transparent" selected>Transparent</option>
-                        <option value="white">White</option>
-                    </select>
-                </div>
-        
-                <!-- Bootstrap Select for Size Selection -->
-                <div class="col-sm">
-                    <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
-                        <option value="small">Small</option>
-                        <option value="normal" selected>Normal</option>
-                        <option value="large">Large</option>
-                        <option value="veryLarge">Very Large</option>
-                        <option value="huge">Huge</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
-                        <button class="btn btn-primary" id="renderButton">Render PNG</button>
-                    </div>
-                </div>
+        <div class="equation-container">
+            <div class="equation">
+                \( x' = x - vt \)
             </div>
+            <button class="symbol-btn equation-btn" data-symbol="x' = x - vt">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Transformation for Time -->
+        <div class="equation-container">
+            <div class="equation">
+                \( t' = t \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="t' = t">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Velocity Transformation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( u' = u - v \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="u' = u - v">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Factor -->
+        <div class="equation-container">
+            <div class="equation">
+                \( x' = \gamma (x - vt) \text{ where } \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \)
+            </div>
+            <button class="symbol-btn equation-btn"
+                data-symbol="x' = \gamma (x - vt) \text{ where } \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Transformation for Time (Revised) -->
+        <div class="equation-container">
+            <div class="equation">
+                \( t' = \gamma \left( t - \frac{v x}{c^2} \right) \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="t' = \gamma \left( t - \frac{v x}{c^2} \right)">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Velocity Transformation (Revised) -->
+        <div class="equation-container">
+            <div class="equation">
+                \( u' = \frac{u - v}{1 - \frac{u v}{c^2}} \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="u' = \frac{u - v}{1 - \frac{u v}{c^2}}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Spacetime Interval -->
+        <div class="equation-container">
+            <div class="equation">
+                \( (\Delta s)^2 = (c \Delta t)^2 - \Delta x^2 \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="(\Delta s)^2 = (c \Delta t)^2 - \Delta x^2">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Time Dilation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( \Delta t = \gamma \Delta t_0 \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="\Delta t = \gamma \Delta t_0">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Length Contraction -->
+        <div class="equation-container">
+            <div class="equation">
+                \( L = \frac{L_0}{\gamma} \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="L = \frac{L_0}{\gamma}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Relativistic Doppler Effect -->
+        <div class="equation-container">
+            <div class="equation">
+                \( \tan(\theta) = \frac{v}{c} \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="\tan(\theta) = \frac{v}{c}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
         
-            <div id="mathContainer"></div>
-            <!-- Container where the copy button will be placed -->
-            <div id="latexCopyContainer" class="mt-2 mb-2"></div>
-            <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-            <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
-        </section>
+<section>
+    <h3>A.5 Galilean and Special Relativity - Basic</h3>
+    <div class="equation-grid">
+        <!-- Lorentz Transformation for Position -->
+        <div class="equation-container">
+            <div class="equation">
+                x' = x - vt
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="x' = x - vt">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Transformation for Time -->
+        <div class="equation-container">
+            <div class="equation">
+                t' = t
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="t' = t">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Velocity Transformation -->
+        <div class="equation-container">
+            <div class="equation">
+                u' = u - v
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="u' = u - v">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Factor -->
+        <div class="equation-container">
+            <div class="equation lg-equation">
+                x' = γ(x - vt) where γ = 1/√(1 - v²/c²)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="x' = γ(x - vt) where γ = 1/√(1 - v²/c²)">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Lorentz Transformation for Time with Velocity -->
+        <div class="equation-container">
+            <div class="equation">
+                t' = γ(t - vx/c²)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="t' = γ(t - vx/c²)">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Velocity Transformation with Relativistic Effect -->
+        <div class="equation-container">
+            <div class="equation">
+                u' = (u - v)/(1 - uv/c²)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="u' = (u - v)/(1 - uv/c²)">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Spacetime Interval -->
+        <div class="equation-container">
+            <div class="equation">
+                (Δs)² = (cΔt)² - Δx²
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="(Δs)² = (cΔt)² - Δx²">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Time Dilation -->
+        <div class="equation-container">
+            <div class="equation">
+                Δt = γΔt₀
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="Δt = γΔt₀">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Length Contraction -->
+        <div class="equation-container">
+            <div class="equation">
+                L = L₀/γ
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="L = L₀/γ">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Relativistic Doppler Effect -->
+        <div class="equation-container">
+            <div class="equation">
+                tanθ = v/c
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="tanθ = v/c">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
+        
+<section>
+    <h3>Make your own LaTeX</h3>
+    <div class="equation-grid">
+        <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+        <!-- Use a row to contain the selects and button -->
+        <div class="row g-2 mb-2">
+            <!-- Bootstrap Select for Background Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                    <option value="transparent" selected>Transparent</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <!-- Bootstrap Select for Size Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                    <option value="small">Small</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="large">Large</option>
+                    <option value="veryLarge">Very Large</option>
+                    <option value="huge">Huge</option>
+                </select>
+            </div>
+            <div class="col-sm-auto">
+                <button class="btn btn-primary" id="renderButton">Render PNG</button>
+            </div>
+        </div>
+        <div id="mathContainer"></div>
+        <!-- Container where the copy button will be placed -->
+        <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+        <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+        <a id="downloadLink" href="#" style="display:none;"></a>
+    </div>
+</section>
 
         <!-- Scroll to Top button (hidden by default with inline style.css) -->
         <button onclick="scrollToTop()" id="scrollToTopButton"

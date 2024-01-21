@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -40,144 +40,147 @@
     <header id="globalHeader"></header>
     <main>
         <h2>Copy Kinematic Equations</h2>
-<p class="info-text">
-    Click the LaTeX buttons to copy LaTeX code for use in your projects or paste into the LaTeX PNG generator below. For
-    instant use in documents or on social media, or you can copy the basic formatted equations.
-</p>
-<small>
-    <em>Note: The LaTeX PNG generator may not display images correctly in Firefox. For the best experience, please use
-        Chrome or Edge browsers.</em>
-            <br>
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal">
-                <i class="far fa-question-circle red"></i>
-            </button>
-
+        <p class="info-text">
+            Click the LaTeX buttons to copy LaTeX code for use in your projects or paste into the LaTeX PNG generator below. For
+            instant use in documents or on social media, or you can copy the basic formatted equations.
+        </p>
+        <small>
+            <em>Note: The LaTeX PNG generator may not display images correctly in Firefox. For the best experience, please use
+                Chrome or Edge browsers.</em>
+        </small>
+        <br>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal">
+            <i class="far fa-question-circle red"></i> How to Use
+        </button>
+        
         <!-- LaTeX Equation Buttons -->
-        <section>
-            <div class="row">
-        <h3>A.1 Kinematic Equations - LaTeX</h3>
+<section>
+    <h3>A.1 Kinematic Equations - LaTeX</h3>
+    <div class="equation-grid">
+        <!-- First Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( s = \frac{u + v}{2} \cdot t \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="s = \frac{u + v}{2} \cdot t">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
         </div>
-            <!-- First Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="s = \frac{u + v}{2} \cdot t">
-                    \( s = \frac{u + v}{2} \cdot t \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <!-- Display as normal text -->
-                <label><code>s = \frac{u + v}{2} \cdot t</code></label>
+        <!-- Second Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( v = u + at \)
             </div>
-        
-            <!-- Second Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="v = u + at">
-                    \( v = u + at \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <!-- Display as normal text -->
-                <label><code>v = u + at</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="v = u + at">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Third Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( s = ut + \frac{1}{2}at^2 \)
             </div>
-        
-            <!-- Third Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="s = ut + \frac{1}{2}at^2">
-                    \( s = ut + \frac{1}{2}at^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <!-- Display as normal text -->
-                <label><code>s = ut + \frac{1}{2}at^2</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="s = ut + \frac{1}{2}at^2">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Fourth Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( v^2 = u^2 + 2as \)
             </div>
-        
-            <!-- Fourth Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="v^2 = u^2 + 2as">
-                    \( v^2 = u^2 + 2as \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <!-- Display as normal text -->
-                <label><code>v^2 = u^2 + 2as</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="v^2 = u^2 + 2as">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
+<section>
+    <h3>A.1 Kinematic Equations - Basic</h3>
+    <div class="equation-grid">
+        <!-- First Basic Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                s = (u + v)/2 × t
             </div>
-        </section>
-
-        <section>
-            <h3>A.1 Kinematic Equations - Basic</h3>
-            <!-- Basic Equation Buttons -->
-            
-            <!-- First Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="s = (u + v)/2 × t">
-                    s = (u + v)/2 × t
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label></label>
+            <button class="symbol-btn equation-btn" data-symbol="s = (u + v)/2 × t">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Second Basic Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                v = u + at
             </div>
-            
-            <!-- Second Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="v = u + at">
-                    v = u + at
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label></label>
+            <button class="symbol-btn equation-btn" data-symbol="v = u + at">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Third Basic Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                s = ut + 1/2 at²
             </div>
-            
-            <!-- Third Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="s = ut + 1/2 at²">
-                    s = ut + 1/2 at²
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label></label>
+            <button class="symbol-btn equation-btn" data-symbol="s = ut + 1/2 at²">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Fourth Basic Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                v² = u² + 2as
             </div>
-            
-            <!-- Fourth Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="v² = u² + 2as">
-                    v² = u² + 2as
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label></label>
-            </div>
-        </section>
+            <button class="symbol-btn equation-btn" data-symbol="v² = u² + 2as">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
 
 <section>
     <h3>Make your own LaTeX</h3>
-    <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-
-    <!-- Use a row to contain the selects and button -->
-    <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
-        <!-- Bootstrap Select for Background Selection -->
-        <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
-            <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
-                <option value="transparent" selected>Transparent</option>
-                <option value="white">White</option>
-            </select>
+    <div class="equation-grid">
+        <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+        <!-- Use a row to contain the selects and button -->
+        <div class="row g-2 mb-2">
+            <!-- Bootstrap Select for Background Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                    <option value="transparent" selected>Transparent</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <!-- Bootstrap Select for Size Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                    <option value="small">Small</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="large">Large</option>
+                    <option value="veryLarge">Very Large</option>
+                    <option value="huge">Huge</option>
+                </select>
+            </div>
+            <div class="col-sm-auto">
+                <button class="btn btn-primary" id="renderButton">Render PNG</button>
+            </div>
         </div>
-
-        <!-- Bootstrap Select for Size Selection -->
-        <div class="col-sm">
-            <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
-                <option value="small">Small</option>
-                <option value="normal" selected>Normal</option>
-                <option value="large">Large</option>
-                <option value="veryLarge">Very Large</option>
-                <option value="huge">Huge</option>
-            </select>
-        </div>
-        <div class="row">
-        <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
-            <button class="btn btn-primary" id="renderButton">Render PNG</button>
-        </div>
-        </div>
+        <div id="mathContainer"></div>
+        <!-- Container where the copy button will be placed -->
+        <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+        <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+        <a id="downloadLink" href="#" style="display:none;"></a>
     </div>
-
-    <div id="mathContainer"></div>
-    <!-- Container where the copy button will be placed -->
-    <div id="latexCopyContainer" class="mt-2 mb-2"></div>
-    <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-    <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
 </section>
 
-        <!-- Scroll to Top button (hidden by default with inline style.css) -->
+<!-- Scroll to Top button (hidden by default with inline style.css) -->
         <button onclick="scrollToTop()" id="scrollToTopButton"
             style="display: none; position: fixed; bottom: 20px; right: 20px;"><i class="fas fa-arrow-up"></i></button>
     

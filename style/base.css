@@ -67,4 +67,15 @@ body, main {
     max-width: 100%; /* Ensuring it doesn't overflow its container */
 }
 
+/* Hide on specific screen sizes between 1200px and 1340px */
+@media (min-width: 1200px) and (max-width: 1340px) {
+    .hide-1200-1340 {
+        display: none !important;
+    }
+}
+
+select {
+    width: auto !important;
+}
+
 

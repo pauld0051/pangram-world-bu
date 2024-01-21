@@ -8,14 +8,14 @@
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center symbol vertically */
     justify-content: center; /* Center symbol horizontally */
-    min-width: 60px; /* Fixed width */
-    height: auto; /* Fixed height */
+    min-width: 80px;
+    height: auto; /* Allow height to adjust to content */
     margin: 0.5rem; /* Spacing around buttons */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
     transition: transform 0.1s ease-in-out, background-color 0.3s; /* Smooth transitions */
     position: relative; /* Needed to position the copied-message span absolutely */
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
-    font-size: calc(11.2px + (14.4 - 11.2) * ((100vw - 300px) / (700 - 300))); /* Responsive font size */
+    padding: 0.3rem 0.6rem; /* Smaller padding */
+    font-size: 0.8rem; /* Smaller font size for the button text */
     word-wrap: break-word; /* Ensure long words do not overflow */
     white-space: normal; /* Allow text to wrap */
     line-height: 1.2; /* Adjust line height for readability */
@@ -50,21 +50,16 @@
 
 .symbol-container {
     position: relative; /* This will contain the absolute overlay */
-    display: block;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-}
-
-.symbol-container code {
-    text-align: left; /* Aligns text to the left */
-    display: block; /* Makes the element a block-level element, which respects the text-align property */
+    margin: 5px; /* Provide some spacing around the symbol container */
 }
 
 .symbol-btn-large {
     padding: 20px; /* Larger padding to increase the size of the button */
-    min-width: 150px; /* Minimum width to accommodate larger content */
+    min-width: 200px;
     display: block; /* To use the full width available */
     margin: 10px auto; /* Center the buttons with automatic margins */
     text-align: center; /* Center the text inside the button */
@@ -104,17 +99,14 @@
 }
 
 .copied-overlay {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: none; /* Hide by default */
+    position: absolute; /* Position relative to the viewport */
     color: #ffffff;
     background-color: #17a2b8;
     border-radius: 5px;
     padding: 4px 8px;
     font-size: 10px;
-    z-index: 1;
+    z-index: 10; /* Ensure it's above other elements */
     white-space: nowrap; /* Keep the 'Copied!' text on a single line */
 }
 
@@ -166,4 +158,92 @@
     }
 }
 
+.equation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.equation-container {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: #fff; /* Background color for the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, and color */
+    transition: box-shadow 0.3s ease-in-out; /* Transition for the shadow for interactive effect */
+}
+
+.equation-container:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover for an interactive effect */
+}
+
+.equation {
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Larger font size for equations */
+    margin-bottom: 10px; /* Space between equation and button */
+    text-align: center; /* Center the equations */
+}
+
+.lg-equation {
+    font-size: 1.3em; /* Adjust this value as needed */
+}
+
+
+.equation-btn {
+    padding: 0.5rem 1rem; /* Smaller padding to reduce button size */
+    font-size: 0.9em; /* Smaller font size for button text */
+    min-width: auto; /* Allow the width to auto-adjust based on content */
+    max-width: 150px; /* Maximum width so buttons don't get too large */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Set font size */
+    color: #333; /* Dark grey color for better contrast */
+    font-weight: bold; /* Make it bold to stand out */
+    padding-top: 1rem; /* Add some space on the top */
+}
+
+h3 {
+    text-align: left;
+    padding-left: 20px; /* Aligns with the grid padding */
+    border-bottom: 1px solid #ddd; /* A subtle line to separate sections */
+    margin-bottom: 1rem; /* Space after the heading */
+    font-size: 1.5rem; /* Set font size smaller than h2 */
+    color: #555; /* Slightly lighter than h2 for hierarchy */
+    font-weight: normal; /* Less emphasis than h2 */
+    margin-top: 2rem; /* Space above the heading */
+}
+
+h4 {
+    text-align: left;
+    padding-left: 20px; /* Aligns with the grid padding */
+    border-bottom: 1px solid #ddd; /* A subtle line to separate sections */
+    margin-bottom: 1rem; /* Space after the heading */
+    font-size: 1.5rem; /* Set font size smaller than h2 */
+    color: #555; /* Slightly lighter than h2 for hierarchy */
+    font-weight: normal; /* Less emphasis than h2 */
+    margin-top: 2rem; /* Space above the heading */
+}
+
+/* Style for the new Copy PNG text link */
+.copy-png-link {
+    display: block; /* Display as a block for proper spacing */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Space from the top */
+    color: #17a2b8; /* Teal color to match the button */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Readable font size */
+    cursor: pointer; /* Cursor indicates clickable link */
+}
+
+.copy-png-link:hover {
+    text-decoration: underline; /* Underline on hover for visual feedback */
+}
 

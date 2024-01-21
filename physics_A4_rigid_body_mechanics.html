@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -56,243 +56,258 @@
         <!-- LaTeX Equation Buttons -->
         <section>
             <h3>A.3 Work, Energy and Power Equations - LaTeX</h3>
-            <!-- Torque as Force times Lever Arm times Sine of Angle -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\tau = Fr\sin(\theta)">
-                    \( \tau = Fr\sin(\theta) \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\tau = Fr\sin(\theta)</code></label>
-            </div>
-
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta \theta = \frac{\omega_i + \omega_f}{2}t">
-                    \( \Delta \theta = \frac{\omega_i + \omega_f}{2}t \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta \theta = \frac{\omega_i + \omega_f}{2}</code></label>
-            </div>
-
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\omega_f = \omega_i + \alpha t">
-                    \( \omega_f = \omega_i + \alpha t \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\omega_f = \omega_i + \alpha t</code></label>
-            </div>
-
-            <!-- Angular Displacement -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta\theta = \omega_{i}t + \frac{1}{2}at^2">
-                    \( \Delta\theta = \omega_{i}t + \frac{1}{2}at^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta\theta = \omega_{i}t + \frac{1}{2}at^2</code></label>
-            </div>
-            
-            <!-- Final Angular Velocity Squared -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\omega_{f}^2 = \omega_{i}^2 + 2a\Delta\theta">
-                    \( \omega_{f}^2 = \omega_{i}^2 + 2a\Delta\theta \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\omega_{f}^2 = \omega_{i}^2 + 2a\Delta\theta</code></label>
-            </div>
-            
-            <!-- Moment of Inertia -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="I = \Sigma mr^2">
-                    \( I = \Sigma mr^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>I = \Sigma mr^2</code></label>
-            </div>
-            
-            <!-- Torque as Moment of Inertia times Angular Acceleration -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\tau = I\alpha">
-                    \( \tau = I\alpha \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\tau = I\alpha</code></label>
-            </div>
-
-            <!-- L Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="L = I\omega">
-                    \( L = I\omega \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>L = I\omega</code></label>
-            </div>
-            
-            <!-- Delta L (tau delta t) Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta L = \tau \Delta t">
-                    \( \Delta L = \tau \Delta t \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta L = \tau \Delta t</code></label>
-            </div>
-            
-            <!-- Delta L (Delta I omega) Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta L = \Delta (I\omega)">
-                    \( \Delta L = \Delta (I\omega) \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta L = \Delta (I\omega)</code></label>
-            </div>
-            
-            <!-- Kinetic Energy of Rotation Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="E_k = \frac{1}{2}I\omega^2 = \frac{L^2}{2I}">
-                    \( E_k = \frac{1}{2}I\omega^2 = \frac{L^2}{2I} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>E_k = \frac{1}{2}I\omega^2 = \frac{L^2}{2I}</code></label>
-            </div>
-        </section>
-        
-        <section>
-        <h3>A.4 Rigid Body Mechanics - Basic</h3>
-        <!-- Torque Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="τ = Fr sin θ">
-                τ = Fr sin θ
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Torque</label>
-        </div>
-        
-        <!-- Angular Displacement Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="Δθ = (ωᵢ + ω_f) / 2 • t">
-                Δθ = (ωᵢ + ωf) / 2 • t
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Angular Displacement</label>
-        </div>
-        
-        <!-- Angular Velocity Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="ω_f = ωᵢ + αt">
-                ωf = ωᵢ + αt
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Angular Velocity</label>
-        </div>
-        
-        <!-- Angular Displacement -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="Δθ = ωᵢ t + ½ at²">
-                Δθ = ω<sub>i</sub> t + ½ at²
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Angular Displacement</label>
-        </div>
-        
-        <!-- Final Angular Velocity Squared -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="ω_f² = ωᵢ² + 2aΔθ">
-                ω<sub>f</sub>² = ω<sub>i</sub>² + 2aΔθ
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Angular Velocity</label>
-        </div>
-        
-        <!-- Moment of Inertia -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="I = Σmr²">
-                I = Σmr²
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Moment of Inertia</label>
-        </div>
-        
-        <!-- Torque as Moment of Inertia times Angular Acceleration -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="τ = Iα">
-                τ = Iα
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Torque</label>
-        </div>
-
-        <!-- L Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="L = Iω">
-                L = Iω
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>L = Iω</label>
-        </div>
-        
-        <!-- Delta L (tau delta t) Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="ΔL = τΔt">
-                ΔL = τΔt
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>ΔL = τΔt</label>
-        </div>
-        
-        <!-- Delta L (Delta I omega) Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="ΔL = Δ(Iω)">
-                ΔL = Δ(Iω)
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>ΔL = Δ(Iω)</label>
-        </div>
-        
-        <!-- Kinetic Energy of Rotation Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="Ek = ½Iω² = L²/2I">
-                Ek = ½Iω² = L²/2I
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Ek = ½Iω² = L²/2I</label>
-        </div>
-        </section>
-        
-        <section>
-            <h3>Make your own LaTeX</h3>
-            <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-        
-            <!-- Use a row to contain the selects and button -->
-            <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
-                <!-- Bootstrap Select for Background Selection -->
-                <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
-                    <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
-                        <option value="transparent" selected>Transparent</option>
-                        <option value="white">White</option>
-                    </select>
-                </div>
-        
-                <!-- Bootstrap Select for Size Selection -->
-                <div class="col-sm">
-                    <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
-                        <option value="small">Small</option>
-                        <option value="normal" selected>Normal</option>
-                        <option value="large">Large</option>
-                        <option value="veryLarge">Very Large</option>
-                        <option value="huge">Huge</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
-                        <button class="btn btn-primary" id="renderButton">Render PNG</button>
+            <div class="equation-grid">
+                <!-- Torque as Force times Lever Arm times Sine of Angle -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \tau = Fr\sin(\theta) \)
                     </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\tau = Fr\sin(\theta)">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Angular Displacement Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \Delta \theta = \frac{\omega_i + \omega_f}{2}t \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\Delta \theta = \frac{\omega_i + \omega_f}{2}t">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Final Angular Velocity Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \omega_f = \omega_i + \alpha t \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\omega_f = \omega_i + \alpha t">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Angular Displacement (Alternative Form) Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \Delta\theta = \omega_{i}t + \frac{1}{2}at^2 \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\Delta\theta = \omega_{i}t + \frac{1}{2}at^2">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Final Angular Velocity Squared Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \omega_{f}^2 = \omega_{i}^2 + 2a\Delta\theta \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\omega_{f}^2 = \omega_{i}^2 + 2a\Delta\theta">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Moment of Inertia Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( I = \Sigma mr^2 \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="I = \Sigma mr^2">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Torque as Moment of Inertia times Angular Acceleration Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \tau = I\alpha \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\tau = I\alpha">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Angular Momentum (L) Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( L = I\omega \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="L = I\omega">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Change in Angular Momentum (Delta L) Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \Delta L = \tau \Delta t \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\Delta L = \tau \Delta t">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Change in Angular Momentum (Delta I omega) Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( \Delta L = \Delta (I\omega) \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="\Delta L = \Delta (I\omega)">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
+                </div>
+        
+                <!-- Kinetic Energy of Rotation Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        \( E_k = \frac{1}{2}I\omega^2 = \frac{L^2}{2I} \)
+                    </div>
+                    <button class="symbol-btn equation-btn" data-symbol="E_k = \frac{1}{2}I\omega^2 = \frac{L^2}{2I}">
+                        Copy LaTeX
+                    </button>
+                    <div class="copied-overlay">Copied!</div>
                 </div>
             </div>
-        
-            <div id="mathContainer"></div>
-            <!-- Container where the copy button will be placed -->
-            <div id="latexCopyContainer" class="mt-2 mb-2"></div>
-            <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-            <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
         </section>
+        
+<section>
+    <h3>A.4 Rigid Body Mechanics - Basic</h3>
+    <div class="equation-grid">
+        <!-- Torque Equation -->
+        <div class="equation-container">
+            <div class="equation">τ = Fr sin θ</div>
+            <button class="symbol-btn equation-btn" data-symbol="τ = Fr sin θ">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Angular Displacement Equation -->
+        <div class="equation-container">
+            <div class="equation">Δθ = (ωᵢ + ωf) / 2 • t</div>
+            <button class="symbol-btn equation-btn" data-symbol="Δθ = (ωᵢ + ω_f) / 2 • t">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Angular Velocity Equation -->
+        <div class="equation-container">
+            <div class="equation">ωf = ωᵢ + αt</div>
+            <button class="symbol-btn equation-btn" data-symbol="ω_f = ωᵢ + αt">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Angular Displacement -->
+        <div class="equation-container">
+            <div class="equation">Δθ = ωᵢ t + ½ at²</div>
+            <button class="symbol-btn equation-btn" data-symbol="Δθ = ωᵢ t + ½ at²">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Final Angular Velocity Squared -->
+        <div class="equation-container">
+            <div class="equation">ω<sub>f</sub>² = ω<sub>i</sub>² + 2aΔθ</div>
+            <button class="symbol-btn equation-btn" data-symbol="ω_f² = ωᵢ² + 2aΔθ">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Moment of Inertia -->
+        <div class="equation-container">
+            <div class="equation">I = Σmr²</div>
+            <button class="symbol-btn equation-btn" data-symbol="I = Σmr²">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Torque as Moment of Inertia times Angular Acceleration -->
+        <div class="equation-container">
+            <div class="equation">τ = Iα</div>
+            <button class="symbol-btn equation-btn" data-symbol="τ = Iα">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- L Equation -->
+        <div class="equation-container">
+            <div class="equation">L = Iω</div>
+            <button class="symbol-btn equation-btn" data-symbol="L = Iω">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Delta L (tau delta t) Equation -->
+        <div class="equation-container">
+            <div class="equation">ΔL = τΔt</div>
+            <button class="symbol-btn equation-btn" data-symbol="ΔL = τΔt">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Delta L (Delta I omega) Equation -->
+        <div class="equation-container">
+            <div class="equation">ΔL = Δ(Iω)</div>
+            <button class="symbol-btn equation-btn" data-symbol="ΔL = Δ(Iω)">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Kinetic Energy of Rotation Equation -->
+        <div class="equation-container">
+            <div class="equation">Ek = ½Iω² = L²/2I</div>
+            <button class="symbol-btn equation-btn" data-symbol="Ek = ½Iω² = L²/2I">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
+        
+<section>
+    <h3>Make your own LaTeX</h3>
+    <div class="equation-grid">
+        <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+        <!-- Use a row to contain the selects and button -->
+        <div class="row g-2 mb-2">
+            <!-- Bootstrap Select for Background Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                    <option value="transparent" selected>Transparent</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <!-- Bootstrap Select for Size Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                    <option value="small">Small</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="large">Large</option>
+                    <option value="veryLarge">Very Large</option>
+                    <option value="huge">Huge</option>
+                </select>
+            </div>
+            <div class="col-sm-auto">
+                <button class="btn btn-primary" id="renderButton">Render PNG</button>
+            </div>
+        </div>
+        <div id="mathContainer"></div>
+        <!-- Container where the copy button will be placed -->
+        <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+        <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+        <a id="downloadLink" href="#" style="display:none;"></a>
+    </div>
+</section>
 
         <!-- Scroll to Top button (hidden by default with inline style.css) -->
         <button onclick="scrollToTop()" id="scrollToTopButton"

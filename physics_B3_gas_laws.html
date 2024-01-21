@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -46,142 +46,140 @@
     </p>
     <small>
         <em>Note: The LaTeX PNG generator may not display images correctly in Firefox. For the best experience, please use
-            Chrome or Edge browsers.</em>
+            Chrome or Edge browsers.</em></small>
         <br>
         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal">
             <i class="far fa-question-circle red"></i>
         </button>
-            <p><em><small>Note: Some limitations exist in the basic form, as subscripts are not always available.</small></em></p>
+           <em><small>Note: Some limitations exist in the basic form, as subscripts are not always available.</small></em>
 
         <!-- LaTeX Equation Buttons -->
-        <section>
-            <h3>B.3 Gas Laws Equations - LaTeX</h3>
-            <!-- Pressure Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = \frac{F}{A}">
-                    \( P = \frac{F}{A} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>P = \frac{F}{A}</code></label>
+<section>
+    <h3>B.3 Gas Laws Equations - LaTeX</h3>
+    <div class="equation-grid">
+        <!-- Pressure Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( P = \frac{F}{A} \)
             </div>
-        
-            <!-- Mole Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="n = \frac{N}{N_A}">
-                    \( n = \frac{N}{N_A} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>n = \frac{N}{N_A}</code></label>
-            </div>
-        
-            <!-- Boyle's Law Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\frac{PV}{T} = \text{constant}">
-                    \( \frac{PV}{T} = \text{constant} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\frac{PV}{T} = \text{constant}</code></label>
-            </div>
+            <button class="symbol-btn equation-btn" data-symbol="P = \frac{F}{A}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
 
-            <!-- Ideal Gas Law Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="PV = nRT = Nk_B T">
-                    \( PV = nRT = Nk_B T \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>PV = nRT = Nk_B T</code></label>
+        <!-- Mole Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( n = \frac{N}{N_A} \)
             </div>
-        
-            <!-- Kinetic Theory Pressure Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = \frac{1}{3} \rho v^2">
-                    \( P = \frac{1}{3} \rho v^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>P = \frac{1}{3} \rho v^2</code></label>
-            </div>
-        
-            <!-- Internal Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="U = \frac{3}{2} nRT = \frac{3}{2} Nk_B T">
-                    \( U = \frac{3}{2} nRT = \frac{3}{2} Nk_B T \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>U = \frac{3}{2} nRT = \frac{3}{2} Nk_B T</code></label>
-            </div>
-        </section>
-        
-    <section>
-        <h3>B.3 Gas Laws - Basic</h3>
-        <!-- Pressure and Area Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="P = F / A">
-                P = F / A
+            <button class="symbol-btn equation-btn" data-symbol="n = \frac{N}{N_A}">
+                Copy LaTeX
             </button>
             <div class="copied-overlay">Copied!</div>
-            <label>Pressure and Area</label>
         </div>
-    
-        <!-- Amount of Substance Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="n = N / Nₐ">
-                n = N / Nₐ
+
+        <!-- Boyle's Law Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( \frac{PV}{T} = \text{constant} \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="\frac{PV}{T} = \text{constant}">
+                Copy LaTeX
             </button>
             <div class="copied-overlay">Copied!</div>
-            <label>Amount of Substance</label>
         </div>
-    
-        <!-- Boyle's Law Equation Corrected -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="PV / T = constant">
-                PV / T = constant
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Boyle's Law</label>
-        </div>
-    
+
         <!-- Ideal Gas Law Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="PV = nRT = NkᵦT">
-                PV = nRT = NkᵦT
+        <div class="equation-container">
+            <div class="equation">
+                \( PV = nRT = Nk_B T \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="PV = nRT = Nk_B T">
+                Copy LaTeX
             </button>
             <div class="copied-overlay">Copied!</div>
-            <label>Ideal Gas Law</label>
         </div>
-    
-        <!-- Kinetic Theory of Gases Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="P = 1/3 ρv²">
-                P = 1/3 ρv²
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Kinetic Theory of Gases</label>
-        </div>
-    
-        <!-- Internal Energy Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="U = 3/2 nRT = 3/2 NkᵦT">
-                U = 3/2 nRT = 3/2 NkᵦT
-            </button>
-            <div class="copied-overlay">Copied!</div>
-            <label>Internal Energy</label>
-        </div>
-    </section>
 
-    <section>
-        <h3>Make your own LaTeX</h3>
+        <!-- Kinetic Theory Pressure Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( P = \frac{1}{3} \rho v^2 \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="P = \frac{1}{3} \rho v^2">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Internal Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( U = \frac{3}{2} nRT = \frac{3}{2} Nk_B T \)
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="U = \frac{3}{2} nRT = \frac{3}{2} Nk_B T">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
+        
+<section>
+    <h3>B.3 Gas Laws - Basic</h3>
+    <div class="equation-grid">
+        <!-- Pressure and Area Equation -->
+        <div class="equation-container">
+            <div class="equation">P = F / A</div>
+            <button class="symbol-btn equation-btn" data-symbol="P = F / A">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Amount of Substance Equation -->
+        <div class="equation-container">
+            <div class="equation">n = N / Nₐ</div>
+            <button class="symbol-btn equation-btn" data-symbol="n = N / Nₐ">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Boyle's Law Equation Corrected -->
+        <div class="equation-container">
+            <div class="equation">PV / T = constant</div>
+            <button class="symbol-btn equation-btn" data-symbol="PV / T = constant">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Ideal Gas Law Equation -->
+        <div class="equation-container">
+            <div class="equation">PV = nRT = NkᵦT</div>
+            <button class="symbol-btn equation-btn" data-symbol="PV = nRT = NkᵦT">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Kinetic Theory of Gases Equation -->
+        <div class="equation-container">
+            <div class="equation">P = 1/3 ρv²</div>
+            <button class="symbol-btn equation-btn" data-symbol="P = 1/3 ρv²">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Internal Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">U = 3/2 nRT = 3/2 NkᵦT</div>
+            <button class="symbol-btn equation-btn" data-symbol="U = 3/2 nRT = 3/2 NkᵦT">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Make your own LaTeX</h3>
+    <div class="equation-grid">
         <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-    
         <!-- Use a row to contain the selects and button -->
-        <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
+        <div class="row g-2 mb-2">
             <!-- Bootstrap Select for Background Selection -->
-            <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
+            <div class="col-sm">
                 <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
                     <option value="transparent" selected>Transparent</option>
                     <option value="white">White</option>
                 </select>
             </div>
-    
             <!-- Bootstrap Select for Size Selection -->
             <div class="col-sm">
                 <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
@@ -192,19 +190,17 @@
                     <option value="huge">Huge</option>
                 </select>
             </div>
-            <div class="row">
-                <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
-                    <button class="btn btn-primary" id="renderButton">Render PNG</button>
-                </div>
+            <div class="col-sm-auto">
+                <button class="btn btn-primary" id="renderButton">Render PNG</button>
             </div>
         </div>
-    
         <div id="mathContainer"></div>
         <!-- Container where the copy button will be placed -->
         <div id="latexCopyContainer" class="mt-2 mb-2"></div>
         <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-        <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
-    </section>
+        <a id="downloadLink" href="#" style="display:none;"></a>
+    </div>
+</section>
 
         <!-- Scroll to Top button (hidden by default with inline style.css) -->
         <button onclick="scrollToTop()" id="scrollToTopButton"

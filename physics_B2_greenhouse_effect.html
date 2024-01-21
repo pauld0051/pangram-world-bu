@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -54,86 +54,95 @@
             <p><em><small>Note: Some limitations exist in the basic form, as subscripts are not always available.</small></em></p>
 
         <!-- LaTeX Equation Buttons -->
-        <section>
-            <h3>B.2 Greenhouse Effect Equations - LaTeX</h3>
-            <!-- Emissivity Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn"
-                    data-symbol="\text{emissivity} = \frac{\text{power radiated per unit area}}{\sigma T^4}">
-                    \( \text{emissivity} = \frac{\text{power radiated per unit area}}{\sigma T^4} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>emissivity = \frac{power radiated per unit area}{\sigma T^4}</code></label>
-            </div>
-        
-            <!-- Albedo Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn"
-                    data-symbol="\text{albedo} = \frac{\text{total scattered power}}{\text{total incident power}}">
-                    \( \text{albedo} = \frac{\text{total scattered power}}{\text{total incident power}} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>albedo = \frac{total scattered power}{total incident power}</code></label>
-            </div>
-        </section>
-        
-    <section>
-        <h3>B.2 Greenhouse Effect - Basic</h3>
+<section>
+    <h3>B.2 Greenhouse Effect Equations - LaTeX</h3>
+    <div class="equation-grid">
         <!-- Emissivity Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="emissivity = power radiated per unit area / σT⁴">
-                emissivity = power radiated per unit area / σT⁴
+        <div class="equation-container">
+            <div class="equation lg-equation">
+                \( \text{emissivity} = \frac{\text{power radiated per unit area}}{\sigma T^4} \)
+            </div>
+            <button class="symbol-btn equation-btn"
+                data-symbol="\text{emissivity} = \frac{\text{power radiated per unit area}}{\sigma T^4}">
+                Copy LaTeX
             </button>
             <div class="copied-overlay">Copied!</div>
-            <label>Emissivity</label>
         </div>
-    
+
         <!-- Albedo Equation -->
-        <div class="symbol-container">
-            <button class="symbol-btn" data-symbol="albedo = total scattered power / total incident power">
-                albedo = total scattered power / total incident power
+        <div class="equation-container">
+            <div class="equation">
+                \( \text{albedo} = \frac{\text{total scattered power}}{\text{total incident power}} \)
+            </div>
+            <button class="symbol-btn equation-btn"
+                data-symbol="\text{albedo} = \frac{\text{total scattered power}}{\text{total incident power}}">
+                Copy LaTeX
             </button>
             <div class="copied-overlay">Copied!</div>
-            <label>Albedo</label>
         </div>
-    </section>
+    </div>
+</section>
+        
+<section>
+    <h3>B.2 Greenhouse Effect - Basic</h3>
+    <div class="equation-grid">
+        <!-- Emissivity Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                emissivity = power radiated per unit area / σT⁴
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="emissivity = power radiated per unit area / σT⁴">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+
+        <!-- Albedo Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                albedo = total scattered power / total incident power
+            </div>
+            <button class="symbol-btn equation-btn" data-symbol="albedo = total scattered power / total incident power">
+                Copy Text
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
 
     <section>
         <h3>Make your own LaTeX</h3>
-        <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-    
-        <!-- Use a row to contain the selects and button -->
-        <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
-            <!-- Bootstrap Select for Background Selection -->
-            <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
-                <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
-                    <option value="transparent" selected>Transparent</option>
-                    <option value="white">White</option>
-                </select>
-            </div>
-    
-            <!-- Bootstrap Select for Size Selection -->
-            <div class="col-sm">
-                <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
-                    <option value="small">Small</option>
-                    <option value="normal" selected>Normal</option>
-                    <option value="large">Large</option>
-                    <option value="veryLarge">Very Large</option>
-                    <option value="huge">Huge</option>
-                </select>
-            </div>
-            <div class="row">
-                <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
+        <div class="equation-grid">
+            <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+            <!-- Use a row to contain the selects and button -->
+            <div class="row g-2 mb-2">
+                <!-- Bootstrap Select for Background Selection -->
+                <div class="col-sm">
+                    <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                        <option value="transparent" selected>Transparent</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <!-- Bootstrap Select for Size Selection -->
+                <div class="col-sm">
+                    <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                        <option value="small">Small</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="large">Large</option>
+                        <option value="veryLarge">Very Large</option>
+                        <option value="huge">Huge</option>
+                    </select>
+                </div>
+                <div class="col-sm-auto">
                     <button class="btn btn-primary" id="renderButton">Render PNG</button>
                 </div>
             </div>
+            <div id="mathContainer"></div>
+            <!-- Container where the copy button will be placed -->
+            <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+            <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+            <a id="downloadLink" href="#" style="display:none;"></a>
         </div>
-    
-        <div id="mathContainer"></div>
-        <!-- Container where the copy button will be placed -->
-        <div id="latexCopyContainer" class="mt-2 mb-2"></div>
-        <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-        <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
     </section>
 
         <!-- Scroll to Top button (hidden by default with inline style.css) -->

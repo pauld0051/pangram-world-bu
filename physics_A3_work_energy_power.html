@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/cards.css">
-    <link rel="stylesheet" href="style/symbols.css">
+    <link rel="stylesheet" href="style/symbols_physics.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- ... favicon ... -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -55,176 +55,166 @@
             <p><em><small>Note: Some limitations exist in the basic form, as subscripts are not always available.</small></em></p>
 
         <!-- LaTeX Equation Buttons -->
-        <section>
-            <h3>A.3 Work, Energy and Power Equations - LaTeX</h3>
-            <!-- Work Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="W = Fs\cos\theta">
-                    \( W = Fs\cos\theta \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>W = Fs\cos\theta</code></label>
+<section>
+    <h3>A.3 Work, Energy and Power Equations - LaTeX</h3>
+    <div class="equation-grid">
+        <!-- Work Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( W = Fs\cos\theta \)
             </div>
-            <!-- Kinetic Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m}">
-                    \( E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m}</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="W = Fs\cos\theta">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Kinetic Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m} \)
             </div>
-            <!-- Potential Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="\Delta E_p = mg\Delta h">
-                    \( \Delta E_p = mg\Delta h \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\Delta E_p = mg\Delta h</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Potential Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( \Delta E_p = mg\Delta h \)
             </div>
-            
-            <!-- Elastic Potential Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="E_H = \frac{1}{2} k \Delta x^2">
-                    \( E_H = \frac{1}{2} k \Delta x^2 \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>E_H = \frac{1}{2} k \Delta x^2</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="\Delta E_p = mg\Delta h">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Elastic Potential Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( E_H = \frac{1}{2} k \Delta x^2 \)
             </div>
-            
-            <!-- Power as Work over Time Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = \frac{\Delta W}{\Delta t}">
-                    \( P = \frac{\Delta W}{\Delta t} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>P = \frac{\Delta W}{\Delta t}</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="E_H = \frac{1}{2} k \Delta x^2">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Power as Work over Time Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( P = \frac{\Delta W}{\Delta t} \)
             </div>
-            
-            <!-- Power as Force times Velocity Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = Fv">
-                    \( P = Fv \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>P = Fv</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="P = \frac{\Delta W}{\Delta t}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Power as Force times Velocity Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( P = Fv \)
             </div>
-            
-            <!-- Efficiency Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn"
-                    data-symbol="\eta = \frac{E_{\text{output}}}{E_{\text{input}}} = \frac{P_{\text{output}}}{P_{\text{input}}}">
-                    \( \eta = \frac{E_{\text{output}}}{E_{\text{input}}} = \frac{P_{\text{output}}}{P_{\text{input}}} \)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label><code>\eta = \frac{E_{\text{output}}}{E_{\text{input}}} = \frac{P_{\text{output}}}{P_{\text{input}}}</code></label>
+            <button class="symbol-btn equation-btn" data-symbol="P = Fv">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Efficiency Equation -->
+        <div class="equation-container">
+            <div class="equation">
+                \( \eta = \frac{E_{\text{output}}}{E_{\text{input}}} = \frac{P_{\text{output}}}{P_{\text{input}}} \)
             </div>
-
-        </section>
+            <button class="symbol-btn equation-btn"
+                data-symbol="\eta = \frac{E_{\text{output}}}{E_{\text{input}}} = \frac{P_{\text{output}}}{P_{\text{input}}}">
+                Copy LaTeX
+            </button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
         
-        <section>
-            <h3>A.3 Work, Energy and Power - Basic</h3>
-            <!-- Work Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="W = F • s • cos(θ)">
-                    W = F • s • cos(θ)
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Work</label>
-            </div>
-            
-            <!-- Kinetic Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="Ek = ½mv² = p²/2m">
-                    Eₖ = ½mv² = p²/2m
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Kinetic Energy</label>
-            </div>
-            
-            <!-- Potential Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="ΔEp = mgΔh">
-                    ΔEₚ = mgΔh
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Potential Energy</label>
-            </div>
-            
-            <!-- Elastic Potential Energy Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="EH = ½kΔx²">
-                    Eₕ = ½kΔx²
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Elastic Potential Energy</label>
-            </div>
-            
-            <!-- Power as Work over Time Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = ΔW/Δt">
-                    P = ΔW/Δt
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Power</label>
-            </div>
-            
-            <!-- Power as Force times Velocity Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="P = Fv">
-                    P = Fv
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Power</label>
-            </div>
-            
-            <!-- Efficiency Equation -->
-            <div class="symbol-container">
-                <button class="symbol-btn" data-symbol="η = E_output/E_input = P_output/P_input">
-                    η = Eₒᵤₜₚᵤₜ/Eᵢₙₚᵤₜ = Pₒᵤₜₚᵤₜ/Pᵢₙₚᵤₜ
-                </button>
-                <div class="copied-overlay">Copied!</div>
-                <label>Efficiency</label>
-            </div>
-
-        </section>
+<section>
+    <h3>A.3 Work, Energy and Power - Basic</h3>
+    <div class="equation-grid">
+        <!-- Work Equation -->
+        <div class="equation-container">
+            <div class="equation">W = F • s • cos(θ)</div>
+            <button class="symbol-btn equation-btn" data-symbol="W = F • s • cos(θ)">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Kinetic Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">Eₖ = ½mv² = p²/2m</div>
+            <button class="symbol-btn equation-btn" data-symbol="Ek = ½mv² = p²/2m">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Potential Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">ΔEₚ = mgΔh</div>
+            <button class="symbol-btn equation-btn" data-symbol="ΔEp = mgΔh">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Elastic Potential Energy Equation -->
+        <div class="equation-container">
+            <div class="equation">Eₕ = ½kΔx²</div>
+            <button class="symbol-btn equation-btn" data-symbol="EH = ½kΔx²">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Power as Work over Time Equation -->
+        <div class="equation-container">
+            <div class="equation">P = ΔW/Δt</div>
+            <button class="symbol-btn equation-btn" data-symbol="P = ΔW/Δt">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Power as Force times Velocity Equation -->
+        <div class="equation-container">
+            <div class="equation">P = Fv</div>
+            <button class="symbol-btn equation-btn" data-symbol="P = Fv">Copy Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+        <!-- Efficiency Equation -->
+        <div class="equation-container">
+            <div class="equation">η = Eₒᵤₜₚᵤₜ/Eᵢₙₚᵤₜ = Pₒᵤₜₚᵤₜ/Pᵢₙₚᵤₜ</div>
+            <button class="symbol-btn equation-btn" data-symbol="η = E_output/E_input = P_output/P_input">Copy
+                Text</button>
+            <div class="copied-overlay">Copied!</div>
+        </div>
+    </div>
+</section>
         
-        <section>
-            <h3>Make your own LaTeX</h3>
-            <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
-        
-            <!-- Use a row to contain the selects and button -->
-            <div class="row g-2 mb-2"> <!-- 'g-2' adds some gap between the columns -->
-                <!-- Bootstrap Select for Background Selection -->
-                <div class="col-sm"> <!-- 'col-sm' will stack on small screens and be horizontal on larger ones -->
-                    <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
-                        <option value="transparent" selected>Transparent</option>
-                        <option value="white">White</option>
-                    </select>
-                </div>
-        
-                <!-- Bootstrap Select for Size Selection -->
-                <div class="col-sm">
-                    <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
-                        <option value="small">Small</option>
-                        <option value="normal" selected>Normal</option>
-                        <option value="large">Large</option>
-                        <option value="veryLarge">Very Large</option>
-                        <option value="huge">Huge</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="col-sm-auto"> <!-- This column will auto-size to the content width -->
-                        <button class="btn btn-primary" id="renderButton">Render PNG</button>
-                    </div>
-                </div>
+<section>
+    <h3>Make your own LaTeX</h3>
+    <div class="equation-grid">
+        <input type="text" id="latexInput" class="form-control mb-2" placeholder="Enter LaTeX here">
+        <!-- Use a row to contain the selects and button -->
+        <div class="row g-2 mb-2">
+            <!-- Bootstrap Select for Background Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Background" id="backgroundSelect">
+                    <option value="transparent" selected>Transparent</option>
+                    <option value="white">White</option>
+                </select>
             </div>
-        
-            <div id="mathContainer"></div>
-            <!-- Container where the copy button will be placed -->
-            <div id="latexCopyContainer" class="mt-2 mb-2"></div>
-            <img id="resultImage" style="display:none; max-width:100%; height:auto;">
-            <a id="downloadLink" href="#" style="display:none;"></a> <!-- Download link will be here -->
-        </section>
+            <!-- Bootstrap Select for Size Selection -->
+            <div class="col-sm">
+                <select class="form-select form-select-sm" aria-label="Select Size" id="sizeSelect">
+                    <option value="small">Small</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="large">Large</option>
+                    <option value="veryLarge">Very Large</option>
+                    <option value="huge">Huge</option>
+                </select>
+            </div>
+            <div class="col-sm-auto">
+                <button class="btn btn-primary" id="renderButton">Render PNG</button>
+            </div>
+        </div>
+        <div id="mathContainer"></div>
+        <!-- Container where the copy button will be placed -->
+        <div id="latexCopyContainer" class="mt-2 mb-2"></div>
+        <img id="resultImage" style="display:none; max-width:100%; height:auto;">
+        <a id="downloadLink" href="#" style="display:none;"></a>
+    </div>
+</section>
 
         <!-- Scroll to Top button (hidden by default with inline style.css) -->
         <button onclick="scrollToTop()" id="scrollToTopButton"

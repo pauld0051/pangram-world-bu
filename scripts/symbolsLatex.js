@@ -111,15 +111,26 @@ function createDownloadLink(imageUrl) {
 }
 
 function createCopyButton(imageUrl) {
+    // Get the container for the copy button
     const latexCopyContainer = document.getElementById('latexCopyContainer');
-    latexCopyContainer.innerHTML = ''; // Clear any existing content
+    
+    // Check if a copy link already exists and remove it
+    const existingCopyLink = latexCopyContainer.querySelector('.copy-png-link');
+    if (existingCopyLink) {
+        latexCopyContainer.removeChild(existingCopyLink);
+    }
 
-    const copyButton = document.createElement('button');
-    copyButton.className = 'symbol-btn';
-    copyButton.innerText = 'Copy PNG';
-    copyButton.onclick = () => copyImageToClipboard(imageUrl);
+    // Create the new copy text link
+    const copyTextLink = document.createElement('a');
+    copyTextLink.className = 'copy-png-link';
+    copyTextLink.innerText = 'Copy PNG';
+    copyTextLink.onclick = (event) => {
+        event.preventDefault(); // Prevent the default anchor action
+        copyImageToClipboard(imageUrl);
+    };
 
-    latexCopyContainer.appendChild(copyButton);
+    // Append the new copy link
+    latexCopyContainer.appendChild(copyTextLink);
 }
 
 function setBackground(selectedBackground) {
@@ -183,3 +194,43 @@ async function copyImageToClipboard(dataUrl) {
         copyImageFallback(dataUrl);
     }
 }
+
+// This function is added to show the copied overlay correctly
+function showCopiedOverlay(button) {
+    // Find the .copied-overlay within the same .symbol-container as the button
+    let overlay = button.closest('.symbol-container').querySelector('.copied-overlay');
+    
+    // Show the overlay
+    overlay.style.display = 'block';
+
+    // Hide the overlay after 2 seconds
+    setTimeout(() => overlay.style.display = 'none', 2000);
+}
+
+document.querySelectorAll('.equation-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Find the .copied-overlay for this button
+        let overlay = this.closest('.equation-container').querySelector('.copied-overlay');
+        
+        // Get the bounding rectangle of the button
+        let rect = this.getBoundingClientRect();
+
+        // Calculate the position of the overlay
+        let overlayTop = rect.top + window.scrollY + (rect.height / 2); // Vertical center
+        let overlayLeft = rect.left + window.scrollX + (rect.width / 2); // Horizontal center
+
+        // Position the overlay and show it
+        overlay.style.top = `${overlayTop}px`;
+        overlay.style.left = `${overlayLeft}px`;
+        overlay.style.transform = 'translate(-50%, -50%)'; // Center the overlay on the button
+        overlay.style.display = 'block';
+
+        // Hide the overlay after 2 seconds
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 2000);
+    });
+});
+
+
+

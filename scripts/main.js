@@ -1,5 +1,6 @@
 // Function to load and initialize header and footer
 function loadHeaderAndFooter() {
+    // Load the header
     fetch('header.html')
         .then(response => response.text())
         .then(data => {
@@ -7,6 +8,7 @@ function loadHeaderAndFooter() {
             // Any header-specific JavaScript can go here
         });
 
+    // Load the footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
