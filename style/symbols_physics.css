@@ -158,11 +158,20 @@
     }
 }
 
+/* Default setting for large screens */
 .equation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+}
+
+/* Adjust setting for small screens */
+@media (max-width: 768px) {
+    .equation-grid {
+         grid-template-columns: repeat(1, minmax(0, 1fr)); /* One column */
+        /* You can adjust the 150px to whatever minimum width works best for your content on small screens */
+    }
 }
 
 .equation-container {

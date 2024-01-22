@@ -35,6 +35,8 @@ function renderEquation() {
     MathJax.typesetPromise().then(() => {
         mathContainer.style.visibility = 'hidden'; // Hide container to prevent flickering
         convertToImage(); // Convert the MathJax output to an image
+        // Scroll to the mathContainer after rendering the LaTeX
+        mathContainer.scrollIntoView({ behavior: 'smooth' });
     }).catch(err => console.error('Error in typesetting:', err));
 }
 
@@ -92,6 +94,8 @@ function convertToImage() {
         resultImage.src = canvas.toDataURL('image/png');
         resultImage.style.display = 'block'; // Show the image
         resultImage.style.margin = 'auto'; // Center the image if needed
+        // Scroll to the resultImage after it has been displayed
+        resultImage.scrollIntoView({ behavior: 'smooth' });
 
         // Create the download link
         createDownloadLink(canvas.toDataURL('image/png'));
@@ -102,35 +106,40 @@ function convertToImage() {
 }
 
 function createDownloadLink(imageUrl) {
-    const downloadLink = document.getElementById('downloadLink');
-    downloadLink.href = imageUrl;
-    downloadLink.download = 'equation.png';
-    downloadLink.style.display = 'block'; // Show the download link
-    downloadLink.textContent = 'Download Image'; // Text for the download link
-    downloadLink.style.textAlign = 'center'; // Center the download link
+    const downloadButton = document.getElementById('downloadLink'); // Assuming this is a button in your HTML
+    downloadButton.style.display = 'block'; // Show the download button
+    downloadButton.textContent = 'Download Image'; // Text for the download button
+    downloadButton.onclick = function() {
+        const link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = 'equation.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 }
 
 function createCopyButton(imageUrl) {
     // Get the container for the copy button
     const latexCopyContainer = document.getElementById('latexCopyContainer');
-    
-    // Check if a copy link already exists and remove it
-    const existingCopyLink = latexCopyContainer.querySelector('.copy-png-link');
-    if (existingCopyLink) {
-        latexCopyContainer.removeChild(existingCopyLink);
+
+    // Check if a copy button already exists and remove it
+    const existingCopyButton = latexCopyContainer.querySelector('.copy-png-button');
+    if (existingCopyButton) {
+        latexCopyContainer.removeChild(existingCopyButton);
     }
 
-    // Create the new copy text link
-    const copyTextLink = document.createElement('a');
-    copyTextLink.className = 'copy-png-link';
-    copyTextLink.innerText = 'Copy PNG';
-    copyTextLink.onclick = (event) => {
-        event.preventDefault(); // Prevent the default anchor action
+    // Create the new copy button
+    const copyButton = document.createElement('button');
+    copyButton.className = 'copy-png-button btn symbol-btn'; // Add classes for styling
+    copyButton.innerText = 'Copy PNG';
+    copyButton.onclick = function(event) {
+        event.preventDefault(); // Prevent the default button action
         copyImageToClipboard(imageUrl);
     };
 
-    // Append the new copy link
-    latexCopyContainer.appendChild(copyTextLink);
+    // Append the new copy button
+    latexCopyContainer.appendChild(copyButton);
 }
 
 function setBackground(selectedBackground) {
@@ -193,18 +202,6 @@ async function copyImageToClipboard(dataUrl) {
         // If the Clipboard API fails, use the fallback
         copyImageFallback(dataUrl);
     }
-}
-
-// This function is added to show the copied overlay correctly
-function showCopiedOverlay(button) {
-    // Find the .copied-overlay within the same .symbol-container as the button
-    let overlay = button.closest('.symbol-container').querySelector('.copied-overlay');
-    
-    // Show the overlay
-    overlay.style.display = 'block';
-
-    // Hide the overlay after 2 seconds
-    setTimeout(() => overlay.style.display = 'none', 2000);
 }
 
 document.querySelectorAll('.equation-btn').forEach(button => {

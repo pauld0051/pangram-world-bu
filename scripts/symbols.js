@@ -1,4 +1,5 @@
 // Function to show the "copied" overlay
+// Shared function to show the "copied" overlay
 function showCopiedOverlay(overlayElement) {
     overlayElement.style.display = 'block'; // Show the overlay
     setTimeout(() => {
@@ -6,19 +7,14 @@ function showCopiedOverlay(overlayElement) {
     }, 5000);
 }
 
-// Function to copy image to clipboard
-async function copyImageToClipboard(imgElement, overlayElement) {
+// Shared function to copy image to clipboard
+async function copyImageToClipboard(dataUrl) {
     try {
-        const canvas = document.createElement('canvas');
-        canvas.width = imgElement.naturalWidth;
-        canvas.height = imgElement.naturalHeight;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(imgElement, 0, 0);
-        canvas.toBlob(async (blob) => {
-            const item = new ClipboardItem({ [blob.type]: blob });
-            await navigator.clipboard.write([item]);
-            showCopiedOverlay(overlayElement); // Show the overlay
-        }, 'image/png');
+        const response = await fetch(dataUrl);
+        const blob = await response.blob();
+        const item = new ClipboardItem({ [blob.type]: blob });
+        await navigator.clipboard.write([item]);
+        console.log('Image copied to clipboard.');
     } catch (err) {
         console.error('Error copying image: ', err);
     }
